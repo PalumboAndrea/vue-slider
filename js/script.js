@@ -70,6 +70,11 @@ createApp({
         },
         choseSlide : function(currentIndex) {
             this.activeIndex = currentIndex;
-        }
+        },
+        
+    },
+    created(){
+        console.log('ciao')
+        setInterval(this.nextImage, 3000);
     }
 }).mount('#app')
