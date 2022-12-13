@@ -26,7 +26,7 @@
                     </div>
                 </div>
 
-                <div class="thumbs">
+                <div class="thumbs" @mouseover="stopAutoPlay"  @mouseleave="playAutoPlay">
                     <div class="prev" @click="previousImage"></div>
                     <div class="next" @click="nextImage"></div>
                     <div v-for="(image, index) in slides" class="thumb" :class="(index === activeIndex) ? 'active' : '' "
