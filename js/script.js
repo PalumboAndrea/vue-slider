@@ -67,6 +67,9 @@ createApp({
             if (this.activeIndex >= this.slides.length){
                 this.activeIndex = 0;
             }
+        },
+        choseSlide : function(currentIndex) {
+            this.activeIndex = currentIndex;
         }
     }
 }).mount('#app')
